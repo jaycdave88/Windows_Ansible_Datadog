@@ -1,0 +1,4 @@
+$hostname = hostname
+$url = “http://” +hostname+ “:5985/wsman”
+
+winrs -r:$url -u:Administrator -p:Admin! ipconfig
